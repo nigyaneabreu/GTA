@@ -1,0 +1,382 @@
+  @import url('https://fonts.googleapis.com/css2?family=Rubik+Lines&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+      *,html{
+           margin: 0;
+        }
+        body{
+            /* adding global font type */
+            font-family: 'Roboto', sans-serif;
+        }
+        /* header settings */
+        .headSettings{
+            color:red;
+            /* background-color: #c3c3f2; */
+            height:100px;
+            width:auto;
+         
+        }
+        .navSettings > a{
+        
+            font-size:20px;
+            margin:20px;
+            text-decoration: none;
+            color:#d71920;
+            /* background-color: #a9a9a9;
+            padding:25px; */
+        }
+        .navSettings > a:hover{
+            color:#000000;
+        }
+      
+
+        .site_logo{
+           
+            height:100px;
+            width:auto;
+        }
+       
+        /* end of header settings */
+
+
+
+        /* main settings */
+        
+        /* div1 - home settings */
+           /* case sensitive */
+
+           .homeSettings{
+            position: relative;
+            /* background-color: #b99091; */
+            /* text-align: center; */
+            padding-top:10px;
+            /* override global font type */
+            font-family: 'Rubik Lines', system-ui;
+
+            }
+           .siteTitle{
+                 position: absolute;
+                 color:#f1ecec;
+                 /* color:#336600;
+                    color:#3B3999; */
+                 font-size: 55px;
+                 top:50px;
+                 /* left: 32%; */
+                text-align: center;
+                left:0;
+                right:0;
+                margin: auto; 
+            }
+            .motto{
+                position: absolute;
+                color:#f1ecec;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                top:150px;
+                /* left:43%; */
+                text-align: center;
+                left:0;
+                right:0;
+                margin: auto; 
+            }
+            .talign{
+            text-align: center;
+            }
+           
+             .home_Bg{
+                /* position: absolute; */
+             height:auto;
+             width: 100%;
+
+
+            }
+            .copyrt_notice{
+            position:relative;
+            padding:10px;
+            font-size:10px;
+            font-family:Arial, Helvetica, sans-serif;
+            margin-left:75%;
+            }
+        /* end of home settings */
+
+
+
+
+        .serviceSettings{
+            position: relative;
+            /* Use this if you need fixed height for your section */
+            /* height:250px; */
+            /* width:100%; */
+            /* background-color: rgb(226, 164, 164); */
+            text-align:justify;
+            font-family: 'Roboto', sans-serif;
+            padding:50px;
+            /* overflow: hidden; -- This will be useful when you want to hide some extra text or context in the fixed height environment */
+            /* overflow: hidden; */
+        }
+        /* start of about settings */
+
+        .aboutSettings{
+            position: relative;
+         
+            width:100%;
+            /* background-color: rgb(217, 226, 164); */
+            text-align: center;
+        }
+        .siteVideo{
+            /* position: absolute; */
+            width: 80%;
+            opacity:0.5;
+        }
+        .aboutInfo{
+            width: 75%;
+            top:50px;
+            left:12%;
+            position: absolute;
+            font-size: 40px;
+        }
+        /* end of about settings */
+
+        /* start of prod settings */
+
+        .pContainer{
+            position:relative;
+            display: flex;
+            /* height:100px; */
+        }
+        .col{
+            position: relative;
+            flex: 1;
+            margin: auto;
+            padding: 5px;
+            
+        
+        }
+        .imgSite{
+            width: 100%;
+            height: 580px;
+        }
+        .pName{
+            position: absolute;
+            top: 40px;
+            font-size: 30px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana;
+            left:60px;
+            right:60px;
+            text-align: center;
+            margin:auto;
+            background-color: rgba(0, 0, 0,0.6);
+            color:#ffffff;
+        }
+        .pButton{
+            position: absolute;
+            /* bottom:100px; */
+            top:120px;
+            left:120px;
+            right:120px;
+            text-align: center;
+            margin:auto;
+        }
+
+        /* end of prod settings */
+
+        /* Start of contact settings */
+
+        .contactSettings{
+            padding: 25px;
+            position: relative;
+            width:90%;
+           
+            border: 1px solid black;
+            text-align: center;
+            left:0;
+            right:0;
+            margin: auto; 
+            margin-bottom: 40px;
+       
+          
+           
+            
+        }
+        
+        .contactForm{
+            /* border:1px solid black; */
+            box-shadow: 2px 2px 5px black;
+            background-color: #f8f6f6;
+            width: 80%;
+            padding:50px;
+            margin: auto; 
+            margin-bottom: 20px;
+
+        
+        }
+
+        .contactForm > input[type=text],input[type=email]{
+            width:75%;
+            font-size: 18px;
+            border: 1px solid rgb(120, 115, 115);
+            border-radius: 2px;
+            padding:2px;
+            margin-bottom: 15px;
+        }
+
+        .contactForm > textarea{
+            width:75%;
+            font-size: 18px;
+            border: 1px solid rgb(120, 115, 115);
+            border-radius: 2px;
+            padding:2px;
+            margin-bottom: 15px;
+        }
+
+        .cbutton{
+            background-color: #e25b5b;
+            padding:6px 10px;
+            
+            border-radius: 5px;
+            font-size: 16px;
+            /* border-color: #e25b5b; */
+            border:none;
+            font-family: "Roboto" ;
+        }
+        .cbutton:hover{
+            background-color: rgb(221, 71, 71);
+            
+
+        }
+        /* End of contact settings */
+
+        
+        /* end of main settings */
+
+        /* gallery settings */
+
+        .slides_container{
+            position: relative;
+            max-width: 1000px;
+            margin:auto;
+            margin-top: 40px;
+        }
+        .gimg{
+            width: 100%;
+        }
+        .prev,.next{
+            position:absolute;
+            text-decoration: none;
+            font-size: 60px;
+            font-weight: 600;
+            cursor: pointer;
+            padding: 10px;
+            background-color: #cbcbf3;
+            top:35%;
+        }
+        .prev{
+            left:0;
+            
+        
+        }
+        .next{
+           right:0;
+        }
+        .prev:hover,.next:hover{
+            background-color: #c1c1da;
+        
+        }
+
+        /* end of gallery settings */
+
+        /* footer settings */
+        .footerSettings{
+            position: relative;
+            /* position: fixed;
+            bottom:0; */
+            text-align: center;
+            padding-top: 50px;
+            background-color: rgb(224, 226, 237);
+            /* height:150px; */
+            /* width: 100%; */
+            font-size: 15px;
+            bottom:0;
+                 
+            
+        }
+        .footNote{
+            text-align: center;
+        }
+        /* end of footer settings */
+     
+
+        /* media query */
+
+
+        @media only screen and (max-width:600px){
+
+            .aboutInfo{
+                /* width: 75%; */
+                top:50px;
+                /* left:12%; */
+                /* position: absolute; */
+                font-size: 12px;
+            }
+            .contactSettings{
+                padding: 5px;
+                /* position: relative; */
+                width:98%;
+               
+                /* border: 1px solid black; */
+                /* text-align: center; */
+                left:20px; 
+                right:20px;
+                margin: auto; 
+                margin-bottom: 20px;
+                margin-top: 40px;
+           
+              
+               
+                
+            }
+            
+            .contactForm{
+                /* border:1px solid black; */
+                /* box-shadow: 2px 2px 5px black; */
+                /* background-color: #f8f6f6; */
+                width: 95%;
+                padding:5px;
+                margin: 0 auto; 
+                margin-bottom: 5px;
+    
+            
+            }
+    
+            .contactForm > input[type=text],input[type=email]{
+                width:95%;
+                font-size: 12px;
+                /* border: 1px solid rgb(120, 115, 115); */
+                /* border-radius: 2px; */
+                /* padding:2px; */
+                margin-bottom: 10px;
+            }
+    
+            .contactForm > textarea{
+                width:75%;
+                font-size: 18px;
+                border: 1px solid rgb(120, 115, 115);
+                border-radius: 2px;
+                padding:2px;
+                margin-bottom: 15px;
+            }
+    
+            .cbutton{
+                background-color: #e25b5b;
+                padding:6px 10px;
+                
+                border-radius: 5px;
+                font-size: 16px;
+                /* border-color: #e25b5b; */
+                border:none;
+                font-family: "Roboto" ;
+            }
+            .cbutton:hover{
+                background-color: rgb(221, 71, 71);
+                
+    
+            }
+        }

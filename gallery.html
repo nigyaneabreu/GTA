@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="slides_container">
+        <div class="slides"><img class="gimg" src="assets\gallery-img\fall.jpg" alt="fall"></div>
+        <div class="slides"><img class="gimg" src="assets\gallery-img\spring.jpg" alt="spring"></div>
+        <div class="slides"><img class="gimg" src="assets\gallery-img\summer.jpg" alt="summer"></div>
+        <div class="slides"><img class="gimg" src="assets\gallery-img\winter.jpg" alt="winter"></div>
+        <a class="prev" onclick="changeSlides(-1)">&#8249;</a>
+        <a class="next" onclick="changeSlides(1)">&#8250;</a>
+        <!-- https://www.toptal.com/designers/htmlarrows/ -->
+    </div>
+    <script>
+        let set_index = 1;
+        dispSlide(set_index);
+        function changeSlides(click_val){
+            dispSlide(set_index += click_val);
+        }
+
+        function dispSlide(current_index){
+            let i;
+            let all_slides = document.getElementsByClassName("slides");
+
+
+            if(current_index > all_slides.length){
+                set_index = 1;
+            }
+
+            if(current_index < 1){
+                set_index = all_slides.length;
+            }
+            for(i=0;i< all_slides.length; i++){
+                all_slides[i].style.display="none";
+            }
+            all_slides[set_index-1].style.display="block";
+            
+
+        }
+
+    </script>
+</body>
+</html>
